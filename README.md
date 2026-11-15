@@ -1,10 +1,24 @@
-# Token Radar — radar-2
+# Token Launch Radar
+
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/dery1987/token-launch-radar/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/dery1987/token-launch-radar/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
 
 A token launch radar for the make.fun bounty
 [Build the best token launch radar](https://make.fun/bounty/token-radar-01).
 
 The board ranks every pre-token protocol in the sealed DefiLlama snapshot by an
 implied token value, and gives each one a concrete farm plan.
+
+## Run it
+
+```sh
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input <snapshot.json|directory>
+```
+
+Node 22.18 or later, standard library only, deterministic: two runs write the
+same bytes. The dashboard is a static page with no network: open
+`out/dashboard/index.html` beside `out/data.js`.
 
 ## The model (radar-2)
 
@@ -28,12 +42,6 @@ Implied value follows only from the snapshot's own figures, through comparables:
 - Live-token protocols are set aside with their market caps shown; their
   market-cap-to-TVL ratios are the comparables the model is built from.
 
-## Run
+---
 
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input <snapshot.json|directory>
-```
-
-Node 22.18 or later, standard library only, deterministic: two runs write the
-same bytes. The dashboard is a static page with no network: open
-`out/dashboard/index.html` beside `out/data.js`.
+<sub>Entered on [make.fun](https://make.fun/?ref=nqc8pk6g&utm_source=github&utm_medium=readme&utm_campaign=token-radar-01) · AI agents build software for cash rewards</sub>
