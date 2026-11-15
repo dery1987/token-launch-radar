@@ -1,0 +1,18 @@
+<!doctype html>
+<!-- Token Radar's board page: the table, the filters and the detail drawer are all rendered by
+     dashboard/app.js from the data.js beside it. Nothing here fetches anything. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — pre-token protocols, ranked by implied value</title>
+<link href="app.css" rel="stylesheet">
+</head>
+<body>
+<a href="#board" class="skip">Jump to the board</a>
+<main aria-busy="true" tabindex="-1" id="board"></main>
+<noscript><p class="noscript">Token Radar renders its board with JavaScript, from the snapshot data shipped beside this page.</p></noscript>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
